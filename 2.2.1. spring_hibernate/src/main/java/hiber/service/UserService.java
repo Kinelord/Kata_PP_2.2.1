@@ -7,12 +7,7 @@ import java.util.List;
 public interface UserService {
     void add(User user);
 
-    void update(User user);
-
     List<User> listUsers();
 
-    User getUser(Long id);
-
     User getUser(String model, int series);
-
 }

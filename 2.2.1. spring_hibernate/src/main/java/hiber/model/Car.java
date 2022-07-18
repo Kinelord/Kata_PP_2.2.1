@@ -8,10 +8,14 @@ public class Car {
 
     @Id
     @GeneratedValue
+    @Column(name = "car_id")
     private Long id;
 
     private String model;
     private int series;
+
+    @OneToOne(mappedBy = "car")
+    private User user;
 
     public String getModel() {
         return model;
